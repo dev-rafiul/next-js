@@ -1,11 +1,16 @@
 "use client"
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const Banner = () => {
 
+    const router = useRouter();
 
     const handleBtn = () => {
-        alert("Clicked")
+        const password = prompt("Enter Your Password");
+        if(password == "1234"){
+            router.push('/')
+        }
     }
 
 
