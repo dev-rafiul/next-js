@@ -9,7 +9,7 @@ const Banner = () => {
     const handleBtn = () => {
         const password = prompt("Enter Your Password");
         if(password == "1234"){
-            router.push('/')
+            router.push('/dashboard')
         }
     }
 
